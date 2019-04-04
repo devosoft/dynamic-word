@@ -87,6 +87,8 @@ int main()
        << "<p>Try typing a sentence here to see the results:</p>";
   auto ta = doc.AddTextArea(TextCB, "text_area");
   ta.SetText(start_text);
+  ta.SetCSS("width", "100%");
+  ta.SetCSS("height", "60px");
 
   auto result = doc.AddDiv("result");
   result << "<br><br>";
